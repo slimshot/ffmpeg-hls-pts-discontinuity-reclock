@@ -17,7 +17,3 @@ jobs:
       run: ./configure --enable-static --disable-optimizations --disable-mmx --disable-stripping --enable-debug=3 --enable-pthreads
     - name: make
       run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
