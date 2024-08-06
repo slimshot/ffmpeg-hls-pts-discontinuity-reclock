@@ -17,3 +17,8 @@ jobs:
       run: ./configure --enable-static --disable-optimizations --disable-mmx --disable-stripping --enable-debug=3 --enable-pthreads
     - name: make
       run: make
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: result-artifact
+        path: bin/ffmpeg
